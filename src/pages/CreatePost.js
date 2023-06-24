@@ -64,7 +64,7 @@ function CreatePost() {
       const currentDate = new Date();
       const options = {day:'numeric',month:'short',year:'numeric'}
       const formattedDate = currentDate.toLocaleDateString('en-US',options)
-      console.log(content);
+     
       await addDoc(postCollectionRef,{title:data.title,lables:data.labelSet,content,coverImg:url,views:0,comments:[],createdAt:formattedDate,postedBy:user.user.displayName})
       navigate('/')
     }
