@@ -1,0 +1,93 @@
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section{
+    width:68rem;
+    height: 34rem;
+    padding:2rem;
+    margin-top: 2rem;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    gap:2rem;
+}
+
+.my-pic{
+    width:52%;
+    height: 100%;
+
+}
+
+.my-pic img{
+    width: 100%;
+    height: inherit;
+    border-radius: 10px;
+}
+
+.bio{
+    width:50%;
+    height: 100%;
+    line-height: 3rem;
+    padding:0 1.5rem;
+}
+
+.bio span{
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    
+
+}
+
+.bio h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.bio h3{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.bio p{
+    line-height: 2rem;
+}
+
+.icons{
+    margin:1rem 0;
+}
+
+.icons i{
+    margin: 0 1rem 0 0 ;
+}
+
+
+@media (max-width:680px) {
+    .about-container{
+        display: block;
+        margin:1rem;
+    }
+    .about-section{
+        width:100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .my-pic{
+        width: 100%;;
+    }
+    .bio{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:864px) {
+    .about-container{
+        margin: 1rem;
+    }
+    .about-section{
+        height: fit-content;
+    }
+}

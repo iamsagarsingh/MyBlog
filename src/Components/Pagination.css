@@ -1,0 +1,21 @@
+.pagination-tool{
+    margin-top: 2rem;
+}
+
+.pagination-tool ul {
+    display: flex;
+    gap:1rem;
+    list-style: none;
+}
+
+.pagination-tool ul li{
+    padding:1rem;
+    border-radius: 50%;
+    background-color: gray;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagination-tool ul li.active{
+    background-color: orange;
+}

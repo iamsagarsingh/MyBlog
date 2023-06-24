@@ -1,0 +1,32 @@
+.loading-wrapper{
+    border-radius: 50%;
+    border: 12px solid  #f3f3f3;
+    border-top: 12px solid gray;
+    position: absolute;
+    top:55%;
+    left:45%;
+    padding:1rem;
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite; /* Safari */
+}
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:680px) {
+    .loading-wrapper{
+        left:30%;
+    }
+}

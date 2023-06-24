@@ -1,0 +1,27 @@
+.navbar-container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.navbar-container ul{
+    display: flex;
+    gap:4rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar-container ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color:#000;
+}
+
+
+@media (max-width:680px) {
+    .navbar-container{
+        display: none;
+    }
+}
